@@ -7,9 +7,33 @@ $color-gray-neutral2: #7b7b7b;
 $color-dark-shades: #3a3a3a;
 $color-light-shades: #f1f8fe;
 
-$fw-regular: 400;
-$fw-semiBold: 500;
-$fw-bold: 600;
+$font-weight-regular: 400;
+$font-weight-semiBold: 500;
+$font-weight-bold: 600;
 
+/*
+14px-> 0.875rem
+16px-> 1rem
+18px-> 1.125rem
+20px->1.25rem
+24px-> 2rem
+36px-> 2.25rem
+60px-> 3.75re
+*/
 
-$fs
+$font-size-300: 0.875rem;
+$font-size-400: 1rem;
+$font-size-500: 1.125rem;
+$font-size-600: 1.25rem;
+$font-size-700: 2rem;
+$font-size-800: 2.25rem;
+$font-size-900: 3.75rem;
+
+$fs-body: $font-size-500;
+$fs-hero-title: $font-size-900;
+$fs-primary-heading: $font-size-700;
+$fs-secondary-heading: $font-size-500;
+$fs-nav: $font-size-600;
+$fs-button: $font-size-500;
+
+$font-family: "Raleway", sans-serif;

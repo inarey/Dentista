@@ -1,0 +1,26 @@
+/*----- Colors -----*/
+/*
+14px-> 0.875rem
+16px-> 1rem
+18px-> 1.125rem
+20px->1.25rem
+24px-> 2rem
+36px-> 2.25rem
+60px-> 3.75re
+*/
+.main-header {
+  display: flex;
+  padding: 16px 130px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.main-header a img[alt] {
+  font-size: 2rem;
+  /* Other styles */
+  text-align: center;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=general.css.map */
