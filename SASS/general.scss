@@ -1,0 +1,23 @@
+@import "variables";
+
+.main-header {
+  display: flex;
+  padding: 16px 130px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.main-header {
+  a {
+    img {
+      &[alt] {
+        // Selects the <img> element with alt attribute
+        font-size: $fs-primary-heading; // Adjust font size as needed
+        /* Other styles */
+        text-align: center;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}
