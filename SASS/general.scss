@@ -1,23 +1,132 @@
-@import "variables";
+@import './base.scss';
+@import './variables.scss';
 
-.main-header {
+.container {
+  background-color: $clr-primary-50;
+}
+
+.nav {
   display: flex;
-  padding: 16px 130px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0px 130px;
+}
+
+.nav-items {
+  display: flex;
+  padding: 4px 0px;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;
 }
 
-.main-header {
-  a {
-    img {
-      &[alt] {
-        // Selects the <img> element with alt attribute
-        font-size: $fs-primary-heading; // Adjust font size as needed
-        /* Other styles */
-        text-align: center;
-        font-weight: $font-weight-bold;
-      }
-    }
-  }
+.nav-logo {
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
+
+.brand-logo {
+  width: 42.348px;
+  height: 42.348px;
+}
+
+.brand-name {
+  color: $clr-primary-500;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.navlink {
+  font-family: Raleway;
+  font-size: $font-size-600;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: $clr-neutral-900;
+  padding: 0 8px;
+}
+
+.active {
+  color: $clr-primary-500;
+}
+
+.navlink:hover {
+  color: $clr-primary-700;
+}
+
+.outlined-btn {
+  padding: 8px 16px;
+  border: 2px solid $clr-secondary-500;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.outlined-btn:hover {
+  background-color: $clr-secondary-500;
+  color: $clr-primary-50;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url('../assets/heroImg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: row;
+  width: 612px;
+  height: 140px;
+}
+
+.primary-heading {
+  color: $clr-white-shades;
+  font-family: Raleway;
+  font-size: $font-size-900;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+
+.primary-btn {
+  margin-top: 54px;
+  padding: 24px 42px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: $clr-secondary-500;
+  border: none;
+}
+
+// Start of Service Section

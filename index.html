@@ -2,49 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Without this meta responsive web design will not work in mobile devices -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Dentista</title>
+
+    <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- JavaScript -->
+    <script defer src="./dist/js/script.js"></script>
+    <title>Project Starter | SCSS</title>
   </head>
   <body>
-    <header class="primary-header">
-      <div class="main-header">
-        <a href="#"><img class="logo" src="./assets/dentista-logo.png" alt="dentista logo"/></a>
-        <nav class="primary-navigation">
-          <ul role="list" class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="header-button">LOGIN</button>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="hero-section">
-          <div class="center-column">
-            <div>
-              <h1>Healthy teeth, Brighter smiles to life</h1>
+    <body>
+      <div class="container">
+<!-- Start of Header Section -->
+        <header class="nav">
+          <div class="nav-items">
+            <div class="nav-logo">
+              <img class="brand-logo" src="./assets/dentista-logo.png" />
+              <h2 class="brand-name">Dentista</h2>
             </div>
-            <div>
-              <button class="primary-button">RESERVE NOW</button>
+            <ul class="navlinks">
+            <li class="navlink active"><a href="#">Home</a></li>
+            <li class="navlink"><a href="#">About</a></li>
+            <li class="navlink"><a href="#">Services</a></li>
+            <li class="navlink"><a href="#">Contact</a></li>
+          </ul>
+            <div class="user-login">
+              <button class="outlined-btn">LOGIN</button>
             </div>
           </div>
-        </div>
-      </section>
+        </header>
+        <section class="hero-section">
+          <div class="tagline">
+            <h1 class="primary-heading">Healthy teeth, <span>Brighter smiles to life</span></h1>
+          </div>
+            <button class="primary-btn">RESERVE NOW</button>
+          </section>
+        
+<!-- End of Header Section -->
 
-<!-- Service Section -->
+<!--Start of Service Section  -->
         <section class="services-section">
           <div class="service-section__img-right">
             <div class="service-section__details">
@@ -179,17 +180,17 @@
                   class="newsletter-input"
                   placeholder="Your Email Address Here"
                   type="email" />
-              <button class="secondary-btn">Subscribe</button>
+              <button class="primary-btn">Subscribe</button>
             </div>
           </div>
         </footer>
-
-<!-- Copyright Section -->
+        <!-- Copyright Section -->
         <div class="copyright-footer">
           <p>&copy; 2024 Dentista.com</p>
           <p>All Rights Reserved</p>
         </div>
       </div>
-    </main>
   </body>
 </html>
+
+  // "watch": "sass --watch sass/main.scss:dist/styles.css"
