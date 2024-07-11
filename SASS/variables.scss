@@ -1,11 +1,23 @@
-/*----- Colors -----*/
-$color-primary: #44aaec;
-$color-secondary: #23a999;
-$color-dark-accent: #0d5a97;
-$color-gray-neutral1: #545454;
-$color-gray-neutral2: #7b7b7b;
-$color-dark-shades: #3a3a3a;
-$color-light-shades: #f1f8fe;
+/* =========
+Colors
+========*/
+
+$clr-primary-50: #f1f8fe; 
+$clr-primary-100: #e2f0fc;
+$clr-primary-500: #44aaec; 
+$clr-primary-700: #0d5a97; 
+$clr-primary-900: #124168; 
+
+$clr-secondary-50: #f1fcf9; 
+$clr-secondary-500: #23a999; 
+$clr-error-500: #EF4444; 
+$clr-neutral-500: #a1a1a1; 
+$clr-neutral-700: #7b7b7b; 
+$clr-neutral-900: #545454; 
+
+$clr-white-shades: #f1f8fe;
+$clr-black-shades: #3a3a3a;
+
 
 $font-weight-regular: 400;
 $font-weight-semiBold: 500;

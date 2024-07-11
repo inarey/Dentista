@@ -44,6 +44,12 @@ a:not([class]) {
 a{
     text-decoration: none;
 }
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 /* Make images easier to work with */
 img,
 picture,
