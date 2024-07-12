@@ -288,4 +288,27 @@ Colors
   border-radius: 8px;
 }
 
+/**********************/
+/*INFORMATION SECTION/
+/**********************/
+.information-section {
+  background-color: #e2f0fc;
+  padding: 4rem 8rem;
+}
+
+.information-box h2 {
+  font-size: 2.25rem;
+  letter-spacing: 0.54px;
+  color: #124168;
+}
+.information-box .info-text {
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  color: #3a3a3a;
+}
+
+.info-buttons {
+  display: flex;
+}
+
 /*# sourceMappingURL=general.css.map */

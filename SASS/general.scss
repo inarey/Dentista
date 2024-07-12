@@ -201,3 +201,29 @@
 .service-img img {
   border-radius: 8px;
 }
+
+/**********************/
+/*INFORMATION SECTION/
+/**********************/
+
+.information-section {
+  background-color: $clr-primary-100;
+  padding: 4rem 8rem;
+}
+
+.information-box {
+  h2 {
+    font-size: $font-size-800;
+    letter-spacing: 0.54px;
+    color: $clr-primary-900;
+  }
+  .info-text {
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    color: $clr-black-shades;
+  }
+}
+
+.info-buttons {
+  display: flex;
+}
