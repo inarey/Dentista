@@ -1,5 +1,5 @@
-@import './base.scss';
-@import './variables.scss';
+@import "base";
+@import "variables";
 
 .container {
   background-color: $clr-primary-50;
@@ -76,7 +76,7 @@
 
 .hero-section {
   height: 100vh;
-  background-image: url('../assets/heroImg.png');
+  background-image: url("../assets/heroImg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 }
 
 .hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
