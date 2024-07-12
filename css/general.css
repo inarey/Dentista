@@ -260,7 +260,7 @@ Colors
   position: absolute;
   border-radius: 8px;
   top: 40%;
-  left: 30%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 
@@ -270,6 +270,13 @@ Colors
   padding-bottom: 100%;
   border: 2px solid #44aaec;
   z-index: -1;
+}
+
+.service-img-right::before,
+.service-img-right::after {
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 
 .service-img {

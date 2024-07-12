@@ -173,7 +173,7 @@
   position: absolute;
   border-radius: 8px;
   top: 40%;
-  left: 30%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 
@@ -183,6 +183,13 @@
   padding-bottom: 100%;
   border: 2px solid $clr-primary-500;
   z-index: -1;
+}
+
+.service-img-right::before,
+.service-img-right::after {
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 
 .service-img {
