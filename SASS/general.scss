@@ -1,9 +1,9 @@
 @import "base";
 @import "variables";
 
-.container {
-  background-color: $clr-primary-50;
-}
+/**********************/
+/*HEADER SECTION/
+/**********************/
 
 .nav {
   display: flex;
@@ -129,4 +129,68 @@
   border: none;
 }
 
-// Start of Service Section
+/**********************/
+/*SERVICEs SECTION/
+/**********************/
+
+.services-section {
+  padding: 9.6rem 0;
+}
+
+.service-text-box {
+  align-content: center;
+}
+
+.service-title {
+  font: {
+    size: $fs-primary-heading;
+    weight: $font-weight-regular;
+  }
+  letter-spacing: 0.54px;
+  color: $clr-primary-900;
+}
+
+.service-description {
+  font: {
+    size: $fs-service-description;
+    weight: $font-weight-regular;
+  }
+  letter-spacing: 0.36px;
+  color: $clr-neutral-700;
+}
+
+.service-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-img-box::before,
+.service-img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 8px;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.service-img-box::before,
+.service-img-box::after {
+  width: 100%;
+  padding-bottom: 100%;
+  border: 2px solid $clr-primary-500;
+  z-index: -1;
+}
+
+.service-img {
+  width: 42%;
+  //420/1000 *100
+  border-radius: 8px;
+}
+
+.service-img img {
+  border-radius: 8px;
+}
