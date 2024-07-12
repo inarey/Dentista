@@ -11,13 +11,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/common.css" />
     <!-- JavaScript -->
     <script defer src="./dist/js/script.js"></script>
     <title>Project Starter | SCSS</title>
   </head>
   <body>
     <body>
-      <div class="container">
+      <div class="">
 <!-- Start of Header Section -->
         <header class="nav">
           <div class="nav-items">
@@ -47,57 +49,54 @@
 
 <!--Start of Service Section  -->
         <section class="services-section">
-          <div class="service-section__img-right">
-            <div class="service-section__details">
-              <h2>General Dentistry Service</h2>
-              <p>Providing comprehensive care for all your dental needs, from
-                routine check-ups to complex treatments, ensuring a healthy and
-                vibrant smile.</p>
+          <div class="container grid grid--2-cols grid-center-v ">
+
+            <!-- Services 1 -->
+            <div class="service-text-box">
+                <h2 class="service-title">General Dentistry Service</h2>
+                <p class="service-description">Providing comprehensive care for all your dental needs, from
+                  routine check-ups to complex treatments, ensuring a healthy and
+                  vibrant smile.</p>
             </div>
-            <div class="service-section__img">
-                <div class="accent-box"></div>
-                <img class="img" src="./assets/generalDentistry.png" />
-            </div>
+            <div class="service-img-box service-img ">
+              <img  src="/assets/generalDentistry.png">
             </div>
 
-          <div class="service-section__img-left">
-            <div class="service-section__img">
-                <div class="accent-box"></div>
-                <img class="img" src="./assets/reconstructive.png" />
-            </div>
-            <div class="service-section__details">
-              <h2>Cosmetic and Reconstructive Dentistry</h2>
-              <p>Enhancing your smile with advanced cosmetic procedures and
-                restorative techniques to achieve both aesthetic beauty and
-                functional excellence.</p>
-            </div>
+            <!-- Services 2 -->
+
+           
+
+            <div class="service-img-box service-img grid--right service-img-right" >
+              <img src="/assets/reconstructive.png">
             </div>
 
-          <div class="service-section__img-right">
-            <div class="service-section__details">
-              <h2>Dental Hygiene</h2>
-              <p>Promoting optimal oral health through professional cleanings,
-                preventive care, and personalized hygiene education to maintain
-                a bright, healthy smile.</p>
-            </div>
-            <div class="service-section__img">
-                <div class="accent-box"></div>
-                <img class="img" src="./assets/dentalHygiene.png" />
-            </div>
+            <div class="service-text-box">
+              <h2 class="service-title">Cosmetic and Reconstructive Dentistry</h2>
+              <p class="service-description">Enhancing your smile with advanced cosmetic procedures and restorative techniques to achieve both aesthetic beauty and functional excellence.</p>
             </div>
 
-          <div class="service-section__img-right">
-            <div class="service-section__details">
-              <h2>Dental Emergency</h2>
-              <p>Offering prompt, expert care for dental emergencies, addressing
-                urgent issues with skill and compassion to relieve pain and
-                restore dental health quickly</p>
+            <!-- Services 3-->
+
+            <div class="service-text-box ">
+              <h2 class="service-title">Dental Hygiene:</h2>
+              <p class="service-description">Promoting optimal oral health through professional cleanings, preventive care, and personalized hygiene education to maintain a bright, healthy smile.</p>
             </div>
-            <div class="service-section__img">
-                <div class="accent-box"></div>
-                <img class="img" src="./assets/dentalEmergency.png" />
+
+            <div class="service-img-box service-img ">
+              <img src="/assets/dentalHygiene.png">
             </div>
+
+            <!-- Services 4 -->
+
+            <div class="service-img-box service-img grid--right service-img-right">
+              <img src="/assets/dentalEmergency.png">
             </div>
+
+            <div class="service-text-box">
+              <h2 class="service-title">Dental Emergency</h2>
+              <p class="service-description">Offering prompt, expert care for dental emergencies, addressing urgent issues with skill and compassion to relieve pain and restore dental health quickly</p>
+            </div>
+          </div>
         </section>
 <!-- End of Service Section -->
 

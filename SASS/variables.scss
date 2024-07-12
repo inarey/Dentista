@@ -2,22 +2,21 @@
 Colors
 ========*/
 
-$clr-primary-50: #f1f8fe; 
+$clr-primary-50: #f1f8fe;
 $clr-primary-100: #e2f0fc;
-$clr-primary-500: #44aaec; 
-$clr-primary-700: #0d5a97; 
-$clr-primary-900: #124168; 
+$clr-primary-500: #44aaec;
+$clr-primary-700: #0d5a97;
+$clr-primary-900: #124168;
 
-$clr-secondary-50: #f1fcf9; 
-$clr-secondary-500: #23a999; 
-$clr-error-500: #EF4444; 
-$clr-neutral-500: #a1a1a1; 
-$clr-neutral-700: #7b7b7b; 
-$clr-neutral-900: #545454; 
+$clr-secondary-50: #f1fcf9;
+$clr-secondary-500: #23a999;
+$clr-error-500: #ef4444;
+$clr-neutral-500: #a1a1a1;
+$clr-neutral-700: #7b7b7b;
+$clr-neutral-900: #545454;
 
 $clr-white-shades: #f1f8fe;
 $clr-black-shades: #3a3a3a;
-
 
 $font-weight-regular: 400;
 $font-weight-semiBold: 500;
@@ -28,7 +27,7 @@ $font-weight-bold: 600;
 16px-> 1rem
 18px-> 1.125rem
 20px->1.25rem
-24px-> 2rem
+24px-> 1.5
 36px-> 2.25rem
 60px-> 3.75re
 */
@@ -37,14 +36,15 @@ $font-size-300: 0.875rem;
 $font-size-400: 1rem;
 $font-size-500: 1.125rem;
 $font-size-600: 1.25rem;
-$font-size-700: 2rem;
+$font-size-700: 1.5;
 $font-size-800: 2.25rem;
 $font-size-900: 3.75rem;
 
 $fs-body: $font-size-500;
 $fs-hero-title: $font-size-900;
-$fs-primary-heading: $font-size-700;
-$fs-secondary-heading: $font-size-500;
+$fs-primary-heading: $font-size-800;
+$fs-secondary-heading: $font-size-600;
+$fs-service-description: $font-size-700;
 $fs-nav: $font-size-600;
 $fs-button: $font-size-500;
 
