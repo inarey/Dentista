@@ -267,3 +267,48 @@
 .info-consulatation {
   font-size: $font-size-700;
 }
+
+/**********************/
+/*DENTIST SECTION/
+/**********************/
+.about-section {
+  background-color: $clr-secondary-50;
+}
+
+.dentist-info {
+  display: flex;
+  width: 80%;
+  padding: 80px 16px;
+  flex-direction: column;
+  justify-content: start;
+  gap: 24px;
+  align-self: stretch;
+  line-height: 2;
+
+  h2 {
+    font-size: $fs-primary-heading;
+    letter-spacing: 0.54px;
+  }
+
+  p {
+    font-size: $fs-body;
+    letter-spacing: 0.27px;
+  }
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: $clr-secondary-500;
+  text-decoration: none;
+
+  padding-bottom: 2px;
+  transition: all 0.3s;
+  font-size: $font-size-600;
+}
+
+.link:hover,
+.link:active {
+  color: $clr-secondary-600;
+  border-bottom: 1px solid currentColor;
+}
