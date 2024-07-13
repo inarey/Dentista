@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <!-- JavaScript -->
@@ -28,11 +29,11 @@
               <h2 class="brand-name">Dentista</h2>
             </div>
             <ul class="navlinks">
-            <li class="navlink active"><a href="#">Home</a></li>
-            <li class="navlink"><a href="#">About</a></li>
-            <li class="navlink"><a href="#">Services</a></li>
-            <li class="navlink"><a href="#">Contact</a></li>
-          </ul>
+              <li class="navlink active"><a href="#">Home</a></li>
+              <li class="navlink"><a href="#">About</a></li>
+              <li class="navlink"><a href="#">Services</a></li>
+              <li class="navlink"><a href="#">Contact</a></li>
+            </ul>
             <div class="user-login">
               <button class="outlined-btn">LOGIN</button>
             </div>
@@ -101,30 +102,38 @@
 <!-- End of Service Section -->
 
 <!-- Start of Information Section -->
-        <section class="information-section">
-          <div class="section-title">
-          <h2>Information</h2>
-          <p class="text-wrapper-7">
-            Our clinic is conveniently located with ample parking and is fully
-          accessible for patients with disabilities.
-          </p>
+        <section class="information-section ">
+          <div class="information-box container">
+              <div>
+                <h2>Information</h2>
+                <p class="info-text">
+                  Our clinic is conveniently located with ample parking and is fully
+                accessible for patients with disabilities.
+                </p>
+              </div>
+              <div class="info-content">
+                <div class="info-positioning">
+                  <div class="info-buttons ">
+                    <button class="info-btn consultation-hours">Consultation Hours</button>
+                    <button class="info-btn calendar">Calendar</button>
+                    <button class="info-btn access">Access</button>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <p class="info-consulatation">We are open Monday to Friday from 8 AM to 6 PM and Saturdays from 9 AM to 2 PM, closed on Sundays.</p>
+                  </div>
+                  <div class="info-option info-calendar" id="calendar">
+                    <h4>Calendar</h4>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=en.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                  </div>
+                  <div class="info-option info-access" id="access">
+                    <h4>Access</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46883.391681816596!2d139.67275769871463!3d35.70100494642279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2059b7fd4b%3A0xec61c68fe232efd2!2sShinjuku%20City%2C%20Tokyo!5e0!3m2!1sen!2sjp!4v1720660193522!5m2!1sen!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>                   
           </div>
-          <div class="info-content">
-              <div class="content active" id="consultation">
-              <h4>Consultation Hours</h4>
-              <p> Monday~Friday</p>
-              <p>AM 10:00~1:00</p>
-              <p>PM 2:30~7:00</p>
-            </div>
-              
-            <div class="calendar" id="calendar">
-              <h4>Calendar</h4>
-              <iframe src="https://calendar.google.com/calendar/embed?src=en.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <div class="access" id="access">
-              <h4>Access</h4>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46883.391681816596!2d139.67275769871463!3d35.70100494642279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2059b7fd4b%3A0xec61c68fe232efd2!2sShinjuku%20City%2C%20Tokyo!5e0!3m2!1sen!2sjp!4v1720660193522!5m2!1sen!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </section>
 <!-- End of Information Section -->
 
@@ -192,4 +201,4 @@
   </body>
 </html>
 
-  // "watch": "sass --watch sass/main.scss:dist/styles.css"
+ 
