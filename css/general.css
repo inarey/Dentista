@@ -364,7 +364,7 @@ Colors
   justify-content: start;
   gap: 24px;
   align-self: stretch;
-  line-height: 2;
+  line-height: 2.5;
 }
 .dentist-info h2 {
   font-size: 2.25rem;
@@ -382,7 +382,7 @@ Colors
   text-decoration: none;
   padding-bottom: 2px;
   transition: all 0.3s;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .link:hover,

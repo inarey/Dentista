@@ -283,7 +283,7 @@
   justify-content: start;
   gap: 24px;
   align-self: stretch;
-  line-height: 2;
+  line-height: 2.5;
 
   h2 {
     font-size: $fs-primary-heading;
@@ -304,7 +304,7 @@
 
   padding-bottom: 2px;
   transition: all 0.3s;
-  font-size: $font-size-600;
+  font-size: $font-size-700;
 }
 
 .link:hover,
