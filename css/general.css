@@ -364,7 +364,7 @@ Colors
   justify-content: start;
   gap: 24px;
   align-self: stretch;
-  line-height: 2;
+  line-height: 2.5;
 }
 .dentist-info h2 {
   font-size: 2.25rem;
@@ -382,13 +382,65 @@ Colors
   text-decoration: none;
   padding-bottom: 2px;
   transition: all 0.3s;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .link:hover,
 .link:active {
   color: #1a7f73;
   border-bottom: 1px solid currentColor;
+}
+
+/**********************/
+/*FOOTER SECTION/
+/**********************/
+.footer-section {
+  padding: 4rem 8rem;
+  background-color: #f1f8fe;
+}
+
+.footer-first-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  gap: 8px;
+}
+
+.address-col {
+  padding: 2.5rem 0;
+}
+
+.footer-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.site-info {
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footer-icon {
+  width: 24px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #3a3a3a;
+  transition: all 0.3s;
+}
+
+.footer-subs h3 {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=general.css.map */
