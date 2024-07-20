@@ -49,7 +49,8 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -136,8 +137,8 @@ Colors
   padding: 20px;
 }
 
-.navlink {
-  font-family: Raleway;
+.navlinks a {
+  font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
@@ -145,23 +146,23 @@ Colors
   letter-spacing: 0.3px;
   color: #545454;
   padding: 0 8px;
+  margin: 0 8px;
 }
-
-.active {
+.navlinks a.active {
+  color: #44aaec;
+  border-bottom: solid 2px;
+  padding: 0;
+}
+.navlinks a:hover {
   color: #44aaec;
 }
 
-.navlink:hover {
-  color: #0d5a97;
-}
-
 .outlined-btn {
-  padding: 8px 16px;
+  padding: 4px 16px;
   border: 2px solid #23a999;
   border-radius: 50px;
   background-color: transparent;
 }
-
 .outlined-btn:hover {
   background-color: #23a999;
   color: #f1f8fe;
@@ -182,7 +183,6 @@ Colors
   position: relative;
   z-index: 1;
 }
-
 .hero-section::before {
   content: "";
   position: absolute;
@@ -203,7 +203,7 @@ Colors
 
 .primary-heading {
   color: #f1f8fe;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 400;
@@ -218,7 +218,13 @@ Colors
   align-items: center;
   border-radius: 50px;
   background-color: #23a999;
+  color: #f1fcf9;
+  letter-spacing: 0.7px;
   border: none;
+}
+.primary-btn:hover {
+  background-color: #196C65;
+  color: #f1f8fe;
 }
 
 /**********************/
@@ -442,5 +448,3 @@ Colors
 .footer-subs h3 {
   font-size: 0.875rem;
 }
-
-/*# sourceMappingURL=general.css.map */

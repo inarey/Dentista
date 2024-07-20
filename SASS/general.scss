@@ -1,5 +1,5 @@
-@import "base";
-@import "variables";
+@import 'base';
+@import 'variables';
 
 /**********************/
 /*HEADER SECTION/
@@ -43,40 +43,44 @@
   padding: 20px;
 }
 
-.navlink {
-  font-family: Raleway;
-  font-size: $font-size-600;
-  font-style: normal;
-  font-weight: $font-weight-regular;
-  line-height: normal;
-  letter-spacing: 0.3px;
-  color: $clr-neutral-900;
-  padding: 0 8px;
-}
+.navlinks {
+  a {
+    font-family: $font-family;
+    font-size: $font-size-600;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: $clr-neutral-900;
+    padding: 0 8px;
+    margin: 0 8px;
 
-.active {
-  color: $clr-primary-500;
-}
-
-.navlink:hover {
-  color: $clr-primary-700;
+    &.active {
+      color: $clr-primary-500;
+      border-bottom: solid 2px;
+      padding: 0;
+    }
+    &:hover {
+      color: $clr-primary-500;
+    }
+  }
 }
 
 .outlined-btn {
-  padding: 8px 16px;
+  padding: 4px 16px;
   border: 2px solid $clr-secondary-500;
   border-radius: 50px;
   background-color: transparent;
-}
 
-.outlined-btn:hover {
-  background-color: $clr-secondary-500;
-  color: $clr-primary-50;
+  &:hover {
+    background-color: $clr-secondary-500;
+    color: $clr-primary-50;
+  }
 }
 
 .hero-section {
   height: 100vh;
-  background-image: url("../assets/heroImg.png");
+  background-image: url('../assets/heroImg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,10 +93,9 @@
   text-align: center;
   position: relative;
   z-index: 1;
-}
 
-.hero-section::before {
-  content: "";
+  &::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -100,6 +103,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: -1;
+}
 }
 
 .tagline {
@@ -111,7 +115,7 @@
 
 .primary-heading {
   color: $clr-white-shades;
-  font-family: Raleway;
+  font-family: $font-family;
   font-size: $font-size-900;
   font-style: normal;
   font-weight: $font-weight-regular;
@@ -126,7 +130,14 @@
   align-items: center;
   border-radius: 50px;
   background-color: $clr-secondary-500;
+  color: $clr-secondary-50;
+  letter-spacing: 0.7px;
   border: none;
+
+  &:hover {
+    background-color: $clr-secondary-700;
+    color: $clr-white-shades;
+  }
 }
 
 /**********************/
@@ -169,7 +180,7 @@
 
 .service-img-box::before,
 .service-img-box::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   border-radius: 8px;

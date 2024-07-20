@@ -1,6 +1,7 @@
 .grid {
   display: grid;
-  column-gap: 6.25rem;
+  -moz-column-gap: 6.25rem;
+       column-gap: 6.25rem;
   row-gap: 4rem;
 }
 
@@ -26,5 +27,3 @@
   padding: 0 3.2rem;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=common.css.map */
