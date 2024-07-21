@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/common.css" />
     <!-- JavaScript -->
     <script defer src="./dist/js/script.js"></script>
+
     <title>Project Starter | SCSS</title>
   </head>
   <body>
@@ -253,14 +254,20 @@
             </div>
           </div>
           <div class="footer-subs">
-            <h3>Subscribe to Our Newsletter</h3>
-            <form action="subscribe.php" method="post">
+            <div class="single">
+              <h3>Subscribe to our newsletter for the latest news update.</h3>
+            </div>
+            <form class="cta-form" action="#">
               <input
                 type="email"
                 name="email"
-                placeholder="Your Email Address"
+                id="email-add"
+                placeholder="Your Email Address Here"
+                required
               />
-              <button type="submit">SUBMIT</button>
+              <span class="input-group-btn">
+                <button class="btn btn--form" type="submit">SUBMIT</button>
+              </span>
             </form>
           </div>
         </section>

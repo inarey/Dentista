@@ -9,10 +9,10 @@ $clr-primary-700: #0d5a97;
 $clr-primary-900: #124168;
 
 $clr-secondary-50: #f1fcf9;
-$clr-secondary-300: #6BDDCA;
+$clr-secondary-300: #6bddca;
 $clr-secondary-500: #23a999;
 $clr-secondary-600: darken($clr-secondary-500, 10%);
-$clr-secondary-700: #196C65;
+$clr-secondary-700: #196c65;
 $clr-error-500: #ef4444;
 $clr-neutral-500: #a1a1a1;
 $clr-neutral-700: #7b7b7b;
@@ -35,6 +35,10 @@ $font-weight-bold: 600;
 60px-> 3.75re
 */
 
+/* =========
+Font Size
+========*/
+
 $font-size-300: 0.875rem;
 $font-size-400: 1rem;
 $font-size-500: 1.125rem;
@@ -51,4 +55,15 @@ $fs-service-description: $font-size-700;
 $fs-nav: $font-size-600;
 $fs-button: $font-size-500;
 
+/* =========
+Typography
+========*/
 $font-family: "Raleway", sans-serif;
+
+/* =========
+Font Weight
+========*/
+
+$font-weight-400: 400;
+$font-weight-regular: 500;
+$font-weight-bold: 600;
