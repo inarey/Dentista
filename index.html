@@ -132,35 +132,32 @@
           </div>
           <div class="info-content">
             <div class="info-positioning">
-              <div class="info-buttons">
-                <button class="info-btn consultation-hours">
-                  Consultation Hours
-                </button>
-                <button class="info-btn calendar">Calendar</button>
-                <button class="info-btn access">Access</button>
-              </div>
-            </div>
-            <div>
-              <div>
-                <p class="info-consulatation">
-                  We are open Monday to Friday from 8 AM to 6 PM and Saturdays
-                  from 9 AM to 2 PM, closed on Sundays.
-                </p>
-              </div>
-              <div class="info-option info-calendar" id="calendar">
-                <h4>Calendar</h4>
-                <iframe
+              <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="consultation">Consultation</button>
+            <button class="tab-btn" data-id="calendar">Calendar</button>
+            <button class="tab-btn" data-id="access">Access</button>
+          </div>
+          <div class="info-box">
+                <div class=" info-text active" id="consultation">
+                  <h3>Consultation Hours</h3>
+                  <p>We are open Monday to Friday from 8 AM to 6 PM and Saturdays
+                  from 9 AM to 2 PM, closed on Sundays.</p>
+                  </div>
+                <div class="info-text" id="calendar">
+                  <h3>Calendar</h3>
+                  <iframe
                   src="https://calendar.google.com/calendar/embed?src=en.japanese%23holiday%40group.v.calendar.google.com&ctz=Asia%2FTokyo"
                   style="border: 0"
-                  width="800"
-                  height="600"
+                  width="400"
+                  height="400"
                   frameborder="0"
                   scrolling="no"
                 ></iframe>
-              </div>
-              <div class="info-option info-access" id="access">
-                <h4>Access</h4>
-                <iframe
+                </div>
+                <div class="info-text" id="access">
+                  <h3>Access</h3>
+                  <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46883.391681816596!2d139.67275769871463!3d35.70100494642279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2059b7fd4b%3A0xec61c68fe232efd2!2sShinjuku%20City%2C%20Tokyo!5e0!3m2!1sen!2sjp!4v1720660193522!5m2!1sen!2sjp"
                   width="400"
                   height="300"
@@ -169,7 +166,10 @@
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
+                </div>
+                </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -270,5 +270,7 @@
         </section>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
