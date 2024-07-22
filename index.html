@@ -27,7 +27,13 @@
     <header class="nav">
       <div class="nav-items">
         <div class="nav-logo">
-          <img class="brand-logo" src="./assets/dentista-logo.png" />
+          <a href="#">
+            <img
+              class="brand-logo"
+              src="./assets/dentista-logo.png"
+              alt="Dentista Logo"
+            />
+          </a>
           <h2 class="brand-name">Dentista</h2>
         </div>
         <ul class="navlinks">
@@ -66,7 +72,7 @@
             </p>
           </div>
           <div class="service-img-box service-img">
-            <img src="/assets/generalDentistry.png" />
+            <img src="/assets/generalDentistry.png" alt="a photo of a tooth" />
           </div>
 
           <!-- Services 2 -->
@@ -74,7 +80,7 @@
           <div
             class="service-img-box service-img grid--right service-img-right"
           >
-            <img src="/assets/reconstructive.png" />
+            <img src="/assets/reconstructive.png" alt="a photo of a tooth" />
           </div>
 
           <div class="service-text-box">
@@ -98,7 +104,10 @@
           </div>
 
           <div class="service-img-box service-img">
-            <img src="/assets/dentalHygiene.png" />
+            <img
+              src="/assets/dentalHygiene.png"
+              alt="a photo showing how to clean teeth"
+            />
           </div>
 
           <!-- Services 4 -->
@@ -106,7 +115,10 @@
           <div
             class="service-img-box service-img grid--right service-img-right"
           >
-            <img src="/assets/dentalEmergency.png" />
+            <img
+              src="/assets/dentalEmergency.png"
+              alt="a general photo of materials use to restore dental health"
+            />
           </div>
 
           <div class="service-text-box">
@@ -179,9 +191,7 @@
 
       <!-- Start of About Us Section -->
       <section class="about-section grid grid--2-cols">
-        <div class="dentist-img">
-          <img src="./assets/dentist.png" alt="your dentist" />
-        </div>
+        <div class="dentist-img" role="img" aria-label="Dentis Image"></div>
         <div class="dentist-info">
           <h2>Your Dentist</h2>
           <p>
@@ -265,9 +275,8 @@
                 placeholder="Your Email Address Here"
                 required
               />
-              <span class="input-group-btn">
-                <button class="btn btn--form" type="submit">SUBMIT</button>
-              </span>
+
+              <button class="btn btn--form" type="submit">SUBMIT</button>
             </form>
           </div>
         </section>

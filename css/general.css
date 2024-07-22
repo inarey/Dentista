@@ -142,6 +142,7 @@ Font Weight
 .brand-logo {
   width: 42.348px;
   height: 42.348px;
+  cursor: pointer;
 }
 
 .brand-name {
@@ -179,6 +180,7 @@ Font Weight
   border: 2px solid #23a999;
   border-radius: 50px;
   background-color: transparent;
+  cursor: pointer;
 }
 .outlined-btn:hover {
   background-color: #23a999;
@@ -195,6 +197,7 @@ Font Weight
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 40px;
   color: white;
   text-align: center;
   position: relative;
@@ -238,6 +241,7 @@ Font Weight
   color: #f1fcf9;
   letter-spacing: 0.7px;
   border: none;
+  cursor: pointer;
 }
 .primary-btn:hover {
   background-color: #196c65;
@@ -378,8 +382,12 @@ Font Weight
 .about-section {
   background-color: #f1fcf9;
 }
-
-.dentist-info {
+.about-section .dentist-img {
+  background-image: url(/assets/dentist.png);
+  background-size: cover;
+  background-position: center;
+}
+.about-section .dentist-info {
   display: flex;
   width: 80%;
   padding: 80px 16px;
@@ -389,11 +397,11 @@ Font Weight
   align-self: stretch;
   line-height: 2.5;
 }
-.dentist-info h2 {
+.about-section .dentist-info h2 {
   font-size: 2.25rem;
   letter-spacing: 0.54px;
 }
-.dentist-info p {
+.about-section .dentist-info p {
   font-size: 1.125rem;
   letter-spacing: 0.27px;
 }
@@ -418,7 +426,6 @@ Font Weight
 /*FOOTER SECTION/
 /**********************/
 .footer-section {
-  padding: 4rem 8rem;
   background-color: #f1f8fe;
 }
 
@@ -473,17 +480,24 @@ Font Weight
   gap: 8px;
   justify-content: center;
   max-width: 650px;
+  flex-basis: 0;
 }
 .footer-subs .single {
-  margin: 0 auto;
   position: relative;
   z-index: 2;
 }
-.footer-subs .single h3 {
+.footer-subs h3 {
   font-size: 0.875rem;
   letter-spacing: 0.21px;
+  text-align: left;
 }
-.footer-subs #email-add {
+.footer-subs .cta-form {
+  display: flex;
+  text-align: center;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.footer-subs .cta-form #email-add {
   width: 279px;
   height: 53px;
   padding: 16px 32px 16px 8px;
@@ -491,7 +505,36 @@ Font Weight
   gap: 8px;
   background: #f1fcf9;
   border: 1px solid #23a999;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0 0 8px;
+}
+.footer-subs .cta-form .btn--form {
+  flex-shrink: 0; /* Prevent button from shrinking */
+  width: 120px;
+  height: 53px;
+  padding: 12px 16px;
+  border: 1px solid #23a999;
+  border-radius: 0 8px 8px 0;
+  background: #23a999;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-second-section {
+  display: flex;
+  padding: 20px 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #124168;
+}
+.footer-second-section span {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  color: white;
 }
 
 /*# sourceMappingURL=general.css.map */

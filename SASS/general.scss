@@ -31,6 +31,7 @@
 .brand-logo {
   width: 42.348px;
   height: 42.348px;
+  cursor: pointer;
 }
 
 .brand-name {
@@ -71,6 +72,7 @@
   border: 2px solid $clr-secondary-500;
   border-radius: 50px;
   background-color: transparent;
+  cursor: pointer;
 
   &:hover {
     background-color: $clr-secondary-500;
@@ -89,6 +91,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 40px;
   color: white;
   text-align: center;
   position: relative;
@@ -122,7 +125,6 @@
   line-height: normal;
   letter-spacing: 0.9px;
 }
-
 .primary-btn {
   margin-top: 54px;
   padding: 24px 42px;
@@ -133,6 +135,7 @@
   color: $clr-secondary-50;
   letter-spacing: 0.7px;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $clr-secondary-700;
@@ -284,26 +287,31 @@
 /**********************/
 .about-section {
   background-color: $clr-secondary-50;
-}
 
-.dentist-info {
-  display: flex;
-  width: 80%;
-  padding: 80px 16px;
-  flex-direction: column;
-  justify-content: start;
-  gap: 24px;
-  align-self: stretch;
-  line-height: 2.5;
-
-  h2 {
-    font-size: $fs-primary-heading;
-    letter-spacing: 0.54px;
+  .dentist-img {
+    background-image: url(/assets/dentist.png);
+    background-size: cover;
+    background-position: center;
   }
+  .dentist-info {
+    display: flex;
+    width: 80%;
+    padding: 80px 16px;
+    flex-direction: column;
+    justify-content: start;
+    gap: 24px;
+    align-self: stretch;
+    line-height: 2.5;
 
-  p {
-    font-size: $fs-body;
-    letter-spacing: 0.27px;
+    h2 {
+      font-size: $fs-primary-heading;
+      letter-spacing: 0.54px;
+    }
+
+    p {
+      font-size: $fs-body;
+      letter-spacing: 0.27px;
+    }
   }
 }
 
@@ -328,7 +336,6 @@
 /*FOOTER SECTION/
 /**********************/
 .footer-section {
-  padding: 4rem 8rem;
   background-color: $clr-white-shades;
 }
 
@@ -384,26 +391,65 @@
   gap: 8px;
   justify-content: center;
   max-width: 650px;
+  flex-basis: 0;
 
   .single {
-    margin: 0 auto;
     position: relative;
     z-index: 2;
-
-    h3 {
-      font-size: $font-size-300;
-      letter-spacing: 0.21px;
-    }
   }
 
-  #email-add {
-    width: 279px;
-    height: 53px;
-    padding: 16px 32px 16px 8px;
-    align-items: center;
-    gap: 8px;
-    background: $clr-secondary-50;
-    border: 1px solid $clr-secondary-500;
-    border-radius: 8px 0px 0px 8px;
+  h3 {
+    font-size: $font-size-300;
+    letter-spacing: 0.21px;
+    text-align: left;
+  }
+
+  .cta-form {
+    display: flex;
+    text-align: center;
+    max-width: 100%;
+    flex-shrink: 0;
+
+    #email-add {
+      width: 279px;
+      height: 53px;
+      padding: 16px 32px 16px 8px;
+      align-items: center;
+      gap: 8px;
+      background: $clr-secondary-50;
+      border: 1px solid $clr-secondary-500;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .btn--form {
+      flex-shrink: 0; /* Prevent button from shrinking */
+      width: 120px;
+      height: 53px;
+      padding: 12px 16px;
+      border: 1px solid $clr-secondary-500;
+      border-radius: 0 8px 8px 0;
+      background: $clr-secondary-500;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-second-section {
+  display: flex;
+  padding: 20px 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: $clr-primary-900;
+
+  span {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: $font-weight-400;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    color: white;
   }
 }
