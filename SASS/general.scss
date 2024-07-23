@@ -221,12 +221,11 @@
 /*INFORMATION SECTION/
 /**********************/
 
-.information-section {
-  background-color: $clr-primary-100;
+.info-section {
   padding: 4rem 8rem;
-}
-
-.information-box {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
   min-height: 80%;
   h2 {
     font-size: $font-size-800;
@@ -234,21 +233,21 @@
     color: $clr-primary-900;
     margin-bottom: 1rem;
   }
-  .info-text {
-    line-height: 24px;
-    letter-spacing: 0.24px;
-    color: $clr-black-shades;
-  }
 }
 
-.info-content {
-  background-color: $clr-primary-50;
+.info-title {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.info {
+  background-color: $clr-primary-100;
   margin: 6rem auto;
-  padding: 109px 103px 66px 104px;
+  padding: 109px 60px 60px 109px;
   position: relative;
 }
 
-.info-positioning {
+.tab-container {
   position: absolute;
   top: -8%; /* Adjust top positioning as needed */
   left: 0;
@@ -256,16 +255,22 @@
   text-align: center; /* Center align content horizontally */
 }
 
-.info-buttons {
+.tab-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top-left-radius: 0.5;
+  border-top-right-radius: 0.5;
+
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
 }
 
 .btn-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-top-left-radius: 0.5 ;
+  border-top-left-radius: 0.5;
   border-top-right-radius: 0.5;
 }
 
@@ -285,7 +290,21 @@
     background-color: $clr-primary-900;
     color: $clr-white-shades;
   }
+  &:focus {
+    background-color: $clr-primary-900;
+    color: $clr-white-shades;
+  }
 }
+
+// hide items
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
 
 /**********************/
 /*DENTIST SECTION/
