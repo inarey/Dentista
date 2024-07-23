@@ -1,0 +1,7 @@
+@media (max-width: 599px) {
+  .service {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */

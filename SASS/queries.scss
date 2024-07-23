@@ -1,0 +1,7 @@
+@import "mixin";
+// Apply styles to .service-title at different breakpoints
+.service {
+  @include bp(s) {
+    grid-template-columns: 1fr;
+  }
+}

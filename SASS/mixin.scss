@@ -1,0 +1,50 @@
+// Define the breakpoint mixin
+@mixin bp($size) {
+  $bp-sm: "(min-width: 600px)";
+  $bp-m: "(min-width: 48em)"; //768px
+  $bp-md-max: "(max-width: 904.9px)";
+  $bp-md: "(min-width: 905px)";
+  $bp-mdlg: "(min-width: 1200px)";
+  $bp-lg: "(min-width: 1440px)";
+  $bp-xl: "(min-width: 1600px)";
+  $bp-xxl: "(min-width: 1900px)";
+  $bp-s: "(max-width: 599px)"; // Define $bp-s for small screens
+
+  @if $size == xxl {
+    @media #{$bp-xxl} {
+      @content;
+    }
+  } @else if $size == xl {
+    @media #{$bp-xl} {
+      @content;
+    }
+  } @else if $size == lg {
+    @media #{$bp-lg} {
+      @content;
+    }
+  } @else if $size == mdlg {
+    @media #{$bp-mdlg} {
+      @content;
+    }
+  } @else if $size == md {
+    @media #{$bp-md} {
+      @content;
+    }
+  } @else if $size == md-max {
+    @media #{$bp-md-max} {
+      @content;
+    }
+  } @else if $size == m {
+    @media #{$bp-m} {
+      @content;
+    }
+  } @else if $size == s {
+    @media #{$bp-s} {
+      @content;
+    }
+  } @else {
+    @media #{$bp-sm} {
+      @content;
+    }
+  }
+}
