@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 /**********************/
 /*HEADER SECTION/
@@ -81,7 +81,7 @@
 
 .hero-section {
   height: 100vh;
-  background-image: url("../assets/heroImg.png");
+  background-image: url('../assets/heroImg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@
   z-index: 1;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -182,7 +182,7 @@
 
 .service-img-box::before,
 .service-img-box::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   border-radius: 8px;
@@ -226,6 +226,7 @@
   margin: 0 auto;
   max-width: 1170px;
   min-height: 80%;
+
   h2 {
     font-size: $font-size-800;
     letter-spacing: 0.54px;
@@ -240,30 +241,17 @@
 }
 
 .info {
-  background-color: $clr-primary-100;
-  margin: 6rem auto;
-  padding: 109px 60px 60px 109px;
-  position: relative;
+  background: $clr-primary-100;
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .tab-container {
-  position: absolute;
-  top: -8%; /* Adjust top positioning as needed */
-  left: 0;
-  right: 0;
-  text-align: center; /* Center align content horizontally */
-}
-
-.tab-bar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-top-left-radius: 0.5;
   border-top-right-radius: 0.5;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
 }
 
 .btn-container {
@@ -274,25 +262,33 @@
 }
 
 .tab-btn {
-  display: block;
-  padding: 8px 16px;
+  padding: 1rem 0;
   border: none;
-  border-radius: 8px;
-  background: $clr-primary-500;
   text-transform: capitalize;
-  font: $font-size-500;
-  width: 200px;
-  height: 40px;
+  font-size: 1rem;
+  display: block;
+  background: $clr-primary-700;
+  color: $clr-white-shades;
   cursor: pointer;
+  transition: $transition;
+  letter-spacing: $letterSpacing;
 
   &:hover:not(.active) {
-    background-color: $clr-primary-900;
-    color: $clr-white-shades;
+    background: $clr-primary-900;
   }
-  &:focus {
-    background-color: $clr-primary-900;
-    color: $clr-white-shades;
+
+  &:nth-child(1) {
+    border-top-left-radius: 8px;
   }
+  &:nth-child(3) {
+    border-top-right-radius: 8px;
+  }
+}
+
+.info-content {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 2rem 1.5rem;
 }
 
 // hide items
@@ -300,10 +296,12 @@
   display: none;
 }
 
+.tab-btn.active {
+  background: $clr-primary-500;
+}
 .content.active {
   display: block;
 }
-
 
 /**********************/
 /*DENTIST SECTION/
