@@ -305,6 +305,24 @@ Font Weight
   display: block;
 }
 
+/*Table Consulatation*/
+table {
+  border-collapse: separate;
+  width: 100%;
+  margin: 0 auto 1em;
+  padding: 2px;
+  background: none;
+}
+table tbody {
+  display: table-row-group;
+  unicode-bidi: isolate;
+  border-color: inherit;
+  text-align: center;
+}
+table tbody tr {
+  border: 1px solid #44aaec;
+}
+
 /**********************/
 /*DENTIST SECTION/
 /**********************/
@@ -465,3 +483,5 @@ Font Weight
   letter-spacing: 0.24px;
   color: white;
 }
+
+/*# sourceMappingURL=general.css.map */
