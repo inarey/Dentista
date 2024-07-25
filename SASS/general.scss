@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 /**********************/
 /*HEADER SECTION/
@@ -81,7 +81,7 @@
 
 .hero-section {
   height: 100vh;
-  background-image: url('../assets/heroImg.png');
+  background-image: url("../assets/heroImg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@
   z-index: 1;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -151,6 +151,16 @@
   margin: auto 0;
 }
 
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.service-group {
+  column-gap: 8rem;
+}
+
 .service-text-box {
   align-content: center;
 }
@@ -177,12 +187,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .service-img-box::before,
 .service-img-box::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   border-radius: 8px;
@@ -197,6 +207,7 @@
   padding-bottom: 100%;
   border: 2px solid $clr-primary-500;
   z-index: -1;
+  margin-bottom: 10px;
 }
 
 .service-img-right::before,
@@ -210,6 +221,7 @@
   width: 42%;
   //420/1000 *100
   border-radius: 8px;
+  display: block;
 }
 
 .service-img img {
@@ -301,6 +313,26 @@
 }
 .content.active {
   display: block;
+}
+
+/*Table Consulatation*/
+table {
+  border-collapse: separate;
+  width: 100%;
+  margin: 0 auto 1em;
+  padding: 2px;
+  background: none;
+
+  tbody {
+    display: table-row-group;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    text-align: center;
+
+    tr {
+      border: 1px solid $clr-primary-500;
+    }
+  }
 }
 
 /**********************/

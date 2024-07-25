@@ -162,6 +162,16 @@ Font Weight
   margin: auto 0;
 }
 
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.service-group {
+  column-gap: 8rem;
+}
+
 .service-text-box {
   align-content: center;
 }
@@ -184,7 +194,7 @@ Font Weight
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .service-img-box::before,
@@ -204,6 +214,7 @@ Font Weight
   padding-bottom: 100%;
   border: 2px solid #44aaec;
   z-index: -1;
+  margin-bottom: 10px;
 }
 
 .service-img-right::before,
@@ -216,6 +227,7 @@ Font Weight
 .service-img {
   width: 42%;
   border-radius: 8px;
+  display: block;
 }
 
 .service-img img {
@@ -303,6 +315,24 @@ Font Weight
 
 .content.active {
   display: block;
+}
+
+/*Table Consulatation*/
+table {
+  border-collapse: separate;
+  width: 100%;
+  margin: 0 auto 1em;
+  padding: 2px;
+  background: none;
+}
+table tbody {
+  display: table-row-group;
+  unicode-bidi: isolate;
+  border-color: inherit;
+  text-align: center;
+}
+table tbody tr {
+  border: 1px solid #44aaec;
 }
 
 /**********************/
@@ -465,3 +495,5 @@ Font Weight
   letter-spacing: 0.24px;
   color: white;
 }
+
+/*# sourceMappingURL=general.css.map */
