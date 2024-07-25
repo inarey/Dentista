@@ -1,5 +1,3 @@
-// javascript for the information section
-
 const info = document.querySelector('.info');
 const btns = document.querySelectorAll('.tab-btn');
 const contents = document.querySelectorAll('.content');

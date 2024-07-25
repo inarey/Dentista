@@ -243,20 +243,18 @@
     font-size: $font-size-800;
     letter-spacing: 0.54px;
     color: $clr-primary-900;
-    margin-bottom: 1rem;
   }
 }
 
 .info-title {
   text-align: left;
-  margin-bottom: 4rem;
 }
 
 .info {
-  background: $clr-primary-100;
   border-radius: 8px;
   display: grid;
   grid-template-rows: auto 1fr;
+  margin-top: 2rem;
 }
 
 .tab-container {
@@ -266,7 +264,7 @@
   border-top-right-radius: 0.5;
 }
 
-.btn-container {
+.tbn-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-top-left-radius: 0.5;
