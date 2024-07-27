@@ -1,7 +1,7 @@
 // Define the breakpoint mixin
 @mixin bp($size) {
   $bp-sm: "(min-width: 600px)";
-  $bp-m: "(min-width: 48em)"; //768px
+  $bp-m: "(max-width: 48em)"; //768px
   $bp-md-max: "(max-width: 904.9px)";
   $bp-md: "(min-width: 905px)";
   $bp-mdlg: "(min-width: 1200px)";

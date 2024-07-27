@@ -1,5 +1,42 @@
-@media (max-width: 599px) {
-  .service {
+@media (max-width: 48em) {
+  .service-group {
+    display: grid;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .service-group .service-img-box {
+    order: 1;
+  }
+  .service-group .service-text-box {
+    order: 2;
   }
 }
+
+@media (max-width: 48em) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-section .dentist-img {
+    background-image: url(/assets/dentist.png);
+    background-size: cover;
+    background-position: center;
+    height: 534px;
+    width: 100%;
+  }
+  .about-section .dentist-info {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer-first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */

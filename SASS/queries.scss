@@ -1,7 +1,48 @@
 @import "mixin";
-// Apply styles to .service-title at different breakpoints
-.service {
-  @include bp(s) {
+// Apply styles to .service-title at 768px screen size
+.service-group {
+  @include bp(m) {
+    display: grid;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
+
+    .service-img-box {
+      order: 1;
+    }
+
+    .service-text-box {
+      order: 2;
+    }
+  }
+}
+
+// Apply styles to .about-section at 768px screen size
+
+.about-section {
+  @include bp(m) {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .dentist-img {
+      background-image: url(/assets/dentist.png);
+      background-size: cover;
+      background-position: center;
+      height: 534px;
+      width: 100%;
+    }
+
+    .dentist-info {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.footer-first-section {
+  @include bp(m) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
