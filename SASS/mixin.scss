@@ -1,14 +1,12 @@
 // Define the breakpoint mixin
 @mixin bp($size) {
-  $bp-sm: "(min-width: 600px)";
-  $bp-m: "(max-width: 48em)"; //768px
-  $bp-md-max: "(max-width: 904.9px)";
-  $bp-md: "(min-width: 905px)";
-  $bp-mdlg: "(min-width: 1200px)";
-  $bp-lg: "(min-width: 1440px)";
-  $bp-xl: "(min-width: 1600px)";
-  $bp-xxl: "(min-width: 1900px)";
-  $bp-s: "(max-width: 599px)"; // Define $bp-s for small screens
+  $bp-sm: "(min-width: 600px)";         // Small screens and up
+  $bp-m: "(max-width: 48em)";          // Medium screens (max-width: 768px)
+  $bp-md: "(max-width: 59em)"; // Medium to large screens (min-width: 944px and max-width: 1200px)
+  $bp-lg: "(min-width: 75em)";         // Large screens and up (min-width: 1200px)
+  $bp-xl: "(min-width: 84em)";         // Extra large screens and up (min-width: 1344px)
+  $bp-xxl: "(min-width: 1900px)";      // Extra extra large screens (min-width: 1900px)
+  $bp-s: "(max-width: 599px)";         // Small screens (max-width: 599px)
 
   @if $size == xxl {
     @media #{$bp-xxl} {

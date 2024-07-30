@@ -81,6 +81,22 @@ Font Weight
   color: #44aaec;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.btn-mobile-nav .icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #44aaec;
+}
+.btn-mobile-nav .icon-mobile-nav[name=close-outline] {
+  display: none;
+}
+
 .outlined-btn {
   padding: 4px 16px;
   border: 2px solid #23a999;
@@ -169,8 +185,7 @@ Font Weight
 }
 
 .service-group {
-  -moz-column-gap: 8rem;
-       column-gap: 8rem;
+  column-gap: 8rem;
 }
 
 .service-text-box {
@@ -494,3 +509,5 @@ table tbody tr {
   letter-spacing: 0.24px;
   color: white;
 }
+
+/*# sourceMappingURL=general.css.map */

@@ -21,6 +21,15 @@
     <link rel="stylesheet" href="./css/queries.css" />
     <!-- JavaScript -->
     <script defer src="./dist/js/script.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
+
 
     <title>Project Starter | SCSS</title>
   </head>
@@ -38,16 +47,22 @@
           </a>
           <h2 class="brand-name">Dentista</h2>
         </div>
-        <ul class="navlinks">
-          <li class="navlink"><a class="active" href="#">Home</a></li>
-          <li class="navlink"><a href="#">About</a></li>
-          <li class="navlink"><a href="#">Services</a></li>
-          <li class="navlink"><a href="#">Contact</a></li>
-        </ul>
+        <nav class="main-nav">
+          <ul class="navlinks">
+            <li class="navlink"><a class="active" href="#">Home</a></li>
+            <li class="navlink"><a href="#">About</a></li>
+            <li class="navlink"><a href="#">Services</a></li>
+            <li class="navlink"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
         <div class="user-login">
           <button class="outlined-btn">LOGIN</button>
         </div>
       </div>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="hero-section">

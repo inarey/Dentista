@@ -66,6 +66,27 @@
   }
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+
+
+   .icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: $clr-primary-500;
+
+   }
+
+   .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+}
+
 .outlined-btn {
   padding: 4px 16px;
   border: 2px solid $clr-secondary-500;
