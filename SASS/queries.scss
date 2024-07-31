@@ -1,7 +1,152 @@
 @import "mixin";
-// Apply styles to .service-title at different breakpoints
-.service {
-  @include bp(s) {
+@import "variables";
+// Apply styles to .service-title at 768px screen size
+.service-group {
+  @include bp(m) {
+    display: grid;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
+
+    .service-img-box {
+      order: 1;
+    }
+
+    .service-text-box {
+      order: 2;
+    }
   }
 }
+
+// Apply styles to .about-section at 768px screen size
+
+.about-section {
+  @include bp(m) {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .dentist-img {
+      background-image: url(/assets/dentist.png);
+      background-size: cover;
+      background-position: center;
+      height: 534px;
+      width: 100%;
+    }
+
+    .dentist-info {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.footer-first-section {
+  @include bp(m) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+
+.header {
+  @include bp(md){
+    .btn-mobile-nav {
+        display:block;
+        z-index: 9999;
+      }
+    
+      &.nav-open{
+      .main-nav {
+       
+          opacity: 1;
+          pointer-events: auto;
+          visibility: visible;
+          transform: translateX(0);
+     }}
+      
+      .main-nav {
+        
+          background-color: rgba(255, 255, 255, 0.9);
+         position: absolute; 
+          top: 0;
+          left: 0;
+          width: 100vw; // Full viewport width
+          height: 100vh; // Full viewport height
+          z-index: 1000; // Ensure it's above other content
+          transform: translateX(100%);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease-in; //1st value what property 
+          //duration
+          //third transition curve
+    
+    
+          //hide navigation
+          //allows no transition at all
+          //display'none; no need to use this
+          //hide it visually
+          opacity: 0;  //we can animate using opacity
+          //setting its visibility
+    
+          // 2. Make it unaccesible to mouse and keyboard
+          pointer-events: none;
+    
+          // 3. Hide it from screen readers
+          visibility: hidden;
+    
+         
+      
+          .main-nav-list {
+            display: flex; // Ensure this container is set to flex
+            flex-direction: column;
+            gap: 3em; // Space between items
+          
+      
+          .navlink {
+            a {
+              
+              // Using & to reference the parent a tag
+              &:link,   // Matches unvisited links
+              &:visited { // Matches visited links
+                font-size: $font-size-700;
+              }
+        }
+      }}}
+      //if only this selector exist then this selector apply then show the close icon
+      &.nav-open 
+          {
+            .icon-mobile-nav[name="close-outline"] {
+              display: block;
+              }
+          }
+          //to hide 
+          &.nav-open 
+          {
+            .icon-mobile-nav[name="menu-outline"] {
+              display: none;
+              }
+          }
+  }
+}
+
+
+ 
+
+
+  // /* Hide navigation */
+  // /* Allows NO transitions at all */
+  // /* display: none; */
+
+  // /* 1) Hide it visually */
+  // opacity: 0;
+
+  // /* 2) Make it unaccessible to mouse and keyboard */
+  // pointer-events: none;
+
+  // /* 3) Hide it from screen readers */
+  // visibility: hidden;
+
+

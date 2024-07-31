@@ -1,5 +1,107 @@
-@media (max-width: 599px) {
-  .service {
+/* =========
+Colors
+========*/
+/*
+14px-> 0.875rem
+16px-> 1rem
+18px-> 1.125rem
+20px->1.25rem
+24px-> 1.5
+36px-> 2.25rem
+60px-> 3.75re
+*/
+/* =========
+Font Size
+========*/
+/* =========
+Typography
+========*/
+/* =========
+Font Weight
+========*/
+@media (max-width: 48em) {
+  .service-group {
+    display: grid;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .service-group .service-img-box {
+    order: 1;
+  }
+  .service-group .service-text-box {
+    order: 2;
   }
 }
+
+@media (max-width: 48em) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-section .dentist-img {
+    background-image: url(/assets/dentist.png);
+    background-size: cover;
+    background-position: center;
+    height: 534px;
+    width: 100%;
+  }
+  .about-section .dentist-info {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer-first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 59em) {
+  .header .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .header.nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .header .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .header .main-nav .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .header .main-nav .main-nav-list .navlink a:link, .header .main-nav .main-nav-list .navlink a:visited {
+    font-size: 1.5rem;
+  }
+  .header.nav-open .icon-mobile-nav[name=close-outline] {
+    display: block;
+  }
+  .header.nav-open .icon-mobile-nav[name=menu-outline] {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=queries.css.map */

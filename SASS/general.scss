@@ -4,20 +4,18 @@
 /*HEADER SECTION/
 /**********************/
 
-.nav {
+.header{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 0px 130px;
-}
-
-.nav-items {
-  display: flex;
-  padding: 4px 0px;
   justify-content: space-between;
   align-items: center;
+  padding: 0 8rem;
+  height: 6rem;
+
+  
+  position: relative;
 }
+
+
 
 .nav-logo {
   display: flex;
@@ -28,41 +26,73 @@
 }
 
 .brand-logo {
-  width: 42.348px;
-  height: 42.348px;
+  height: 2.6rem;
   cursor: pointer;
 }
 
 .brand-name {
   color: $clr-primary-500;
 }
+/**************************/
+/* NAVIGATION */
+/**************************/
 
-.navlinks {
+// Main navigation list styles
+.main-nav-list {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 1.25rem;
+  margin: 0; // Adjust margins if necessary
+
+  // Styles for each link within the nav list
+  .navlink {
+    a {
+      display: inline-block;
+      padding: 0 8px; // Adjust padding if necessary
+      color: inherit; // Use color from parent
+      text-decoration: none; // Remove underline
+      font-family: $font-family;
+      font-size: $font-size-600;
+      font-style: normal;
+      font-weight: $font-weight-regular;
+      line-height: normal;
+      letter-spacing: 0.3px;
+
+      // Using & to reference the parent a tag
+      &:link,   // Matches unvisited links
+      &:visited { // Matches visited links
+        color: $clr-neutral-900;
+      }
+
+      &:active { // Matches the link currently being clicked
+        color: $clr-primary-500;
+      }
+
+      &:hover { // Matches the link when hovered over
+        color: $clr-primary-500;
+      }
+    }
+  }
 }
 
-.navlinks {
-  a {
-    font-family: $font-family;
-    font-size: $font-size-600;
-    font-style: normal;
-    font-weight: $font-weight-regular;
-    line-height: normal;
-    letter-spacing: 0.3px;
-    color: $clr-neutral-900;
-    padding: 0 8px;
-    margin: 0 8px;
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
 
-    &.active {
-      color: $clr-primary-500;
-      border-bottom: solid 2px;
-      padding: 0;
-    }
-    &:hover {
-      color: $clr-primary-500;
-    }
+  display: none;
+
+
+   .icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: $clr-primary-500;
+
+   }
+
+   .icon-mobile-nav[name="close-outline"] {
+    display: none;
   }
 }
 
