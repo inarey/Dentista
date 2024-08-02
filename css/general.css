@@ -27,7 +27,7 @@ Font Weight
   justify-content: space-between;
   align-items: center;
   padding: 0 8rem;
-  height: 6rem;
+  height: 4rem;
   position: relative;
 }
 
@@ -322,6 +322,14 @@ Font Weight
   display: none;
 }
 
+iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  margin: 0 auto;
+}
+
 .tab-btn.active {
   background: #44aaec;
 }
@@ -331,21 +339,27 @@ Font Weight
 }
 
 /*Table Consulatation*/
-table {
+.timetable {
   border-collapse: separate;
   width: 100%;
   margin: 0 auto 1em;
-  padding: 2px;
-  background: none;
+  background-color: #f1f8fe;
 }
-table tbody {
+.timetable thead {
   display: table-row-group;
   unicode-bidi: isolate;
   border-color: inherit;
   text-align: center;
 }
-table tbody tr {
-  border: 1px solid #44aaec;
+
+th {
+  padding: 24px;
+  background-color: #e2f0fc;
+}
+
+td {
+  padding: 24px;
+  text-align: center;
 }
 
 /**********************/
