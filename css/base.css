@@ -58,7 +58,8 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 a {
@@ -92,5 +93,3 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-
-/*# sourceMappingURL=base.css.map */

@@ -183,7 +183,8 @@ Font Weight
 }
 
 .service-group {
-  column-gap: 8rem;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
 }
 
 .service-text-box {
@@ -507,5 +508,3 @@ table tbody tr {
   letter-spacing: 0.24px;
   color: white;
 }
-
-/*# sourceMappingURL=general.css.map */
