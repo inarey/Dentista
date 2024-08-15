@@ -17,3 +17,10 @@ info.addEventListener('click', function (e) {
     element.classList.add('active');
   }
 });
+
+
+//  Event Listener for the open-close navlinks on max-width 768px
+document.getElementById('hamburger').addEventListener('click', function () {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('active');
+});

@@ -22,45 +22,46 @@
     <!-- JavaScript -->
     <script defer src="./dist/js/script.js"></script>
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule=""
-    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-  ></script>
-
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <title>Dentista</title>
   </head>
   <body>
     <!-- Start of Header Section -->
-    <header class="header nav-open"> 
-        <div class="nav-logo" id="home">
-          <a href="#home">
-            <img
-              class="brand-logo"
-              src="./assets/dentista-logo.png"
-              alt="Dentista Logo"
-            />
-          </a>
-          <h2 class="brand-name">Dentista</h2>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li class="navlink"><a class="active" href="#home">Home</a></li>
-            <li class="navlink"><a href="#about">About</a></li>
-            <li class="navlink"><a href="#services">Services</a></li>
-            <li class="navlink"><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="user-login">
-          <button class="outlined-btn">LOGIN</button>
-        </div>
-        <button class="btn-mobile-nav">
+    <header class="header">
+      <div class="nav-logo" id="home">
+        <a href="#home">
+          <img
+            class="brand-logo"
+            src="./assets/dentista-logo.png"
+            alt="Dentista Logo"
+          />
+        </a>
+          <a href="#home"><h2 class="brand-name">Dentista</h2></a>
+      </div>
+      <nav class="main-nav" id="nav-links">
+        <ul class="main-nav-list" >
+          <li class="navlink"><a class="active" href="#home">Home</a></li>
+          <li class="navlink"><a href="#about">About</a></li>
+          <li class="navlink"><a href="#services">Services</a></li>
+          <li class="navlink"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-login">
+        <button class="outlined-btn">LOGIN</button>
+      </div>
+
+      <button class="btn-mobile-nav" id="hamburger">
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
           <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
+
     </header>
     <main>
       <section class="hero-section">
@@ -192,8 +193,8 @@
                     <th>Friday</th>
                     <th>Saturday</th>
                   </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
                   <tr>
                     <th>9:00~12:00</th>
                     <td class="fc-b">●</td>
@@ -212,7 +213,7 @@
                     <td>/</td>
                     <td class="fc-b">●</td>
                   </tr>
-                  </tbody>
+                </tbody>
               </table>
             </div>
             <!-- single item  / calendar for reservartion-->
@@ -336,7 +337,7 @@
             </form>
           </div>
         </section>
-        <section class="footer-second-section"> 
+        <section class="footer-second-section">
           <span>&copy 2024 Dentista.com</span>
           <span>All Rights Reserved</span>
         </section>
